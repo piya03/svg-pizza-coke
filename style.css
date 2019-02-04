@@ -1,0 +1,204 @@
+.container {
+    height: 550px;
+    width: 650px;
+    background: pink;
+    margin: 0 auto;
+    border: 2px solid blue;
+  }
+  .coke {
+    font-size: 5px;
+    fill: white;
+    font-weight: bold;
+    font-family: "ZCOOL KuaiLe", cursive;
+  }
+  svg {
+    /*   #ff3445 */
+    background: #de598f;
+    border: 2px solid yellow;
+    margin: 0 auto;
+  }
+  .coke-move {
+    animation: cokemove 0.8s ease-in infinite alternate;
+  }
+  @keyframes cokemove {
+    0% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(0.6%);
+    }
+  }
+  svg:hover .test {
+    transform: translate(-1%, 1%);
+  }
+  svg:hover .test2 {
+    transform: translate(1%, 1%);
+  }
+  svg:hover .test3 {
+    transform: translate(-1%, -2%);
+  }
+  svg:hover .test4 {
+    transform: translate(1%, -2%);
+  }
+  .grad1 {
+    fill: url(#gradient);
+  }
+  .tomato {
+    animation-name: tomato;
+    animation-duration: 0.5s;
+    animation-function: ease-in;
+  }
+  @keyframes tomato {
+    0% {
+      transform: translateY(-70px);
+    }
+    100%,
+    70% {
+      transform: translateY(-5px);
+    }
+    80% {
+      transform: translateX(0);
+    }
+  }
+  .green-cap {
+    animation-name: green-cap;
+    animation-duration: 1s;
+    animation-function: ease-in;
+  }
+  @keyframes green-cap {
+    0% {
+      transform: translateY(-70px);
+    }
+    100%,
+    70% {
+      transform: translateY(-5px);
+    }
+    80% {
+      transform: translateX(0);
+    }
+  }
+  .yellow-cap {
+    animation-name: yellow-cap;
+    animation-duration: 1s;
+    animation-function: ease-in;
+  }
+  @keyframes yellow-cap {
+    0% {
+      transform: translateY(-70px);
+    }
+    100%,
+    70% {
+      transform: translateY(-5px);
+    }
+    80% {
+      transform: translateX(0);
+    }
+  }
+  .onion-cap {
+    animation-name: onion-cap;
+    animation-duration: 1.1s;
+    animation-function: ease-in;
+  
+    animation-fill-mode: forwards;
+    opacity: 0;
+    stroke: url(#linear-onion);
+  }
+  @keyframes onion-cap {
+    0% {
+      transform: translateY(-70px);
+      opacity: 0;
+    }
+    99%,
+    70% {
+      transform: translateY(-5px);
+    }
+    80% {
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  .black-cap {
+    animation-name: black-cap;
+    animation-duration: 1.2s;
+    animation-function: ease-in;
+  }
+  @keyframes black-cap {
+    0% {
+      transform: translateY(-70px);
+    }
+    100%,
+    70% {
+      transform: translateY(-5px);
+    }
+    80% {
+      transform: translateX(0);
+    }
+  }
+  .mashroom-cap {
+    animation-name: mashroom-cap;
+    animation-duration: 1.4s;
+    animation-function: ease-in;
+  }
+  @keyframes mashroom-cap {
+    0% {
+      transform: translateY(-70px);
+    }
+    100%,
+    70% {
+      transform: translateY(-5px);
+    }
+    80% {
+      transform: translateX(0);
+    }
+  }
+  .three-circle {
+    /* animation name,duration,count,direction,time-function */
+    animation-name: three-circle;
+    animation-duration: 1.4s;
+    animation-function: ease-in;
+  }
+  @keyframes three-circle {
+    0% {
+      transform: translateY(-70px);
+    }
+    100%,
+    70% {
+      transform: translateY(-5px);
+    }
+    80% {
+      transform: translateX(0);
+    }
+  }
+  ////////////
+  .group {
+  }
+  @keyframes outer-circle {
+    to {
+      transform: rotate(0deg);
+      transform-origin: 40% 20%;
+    }
+    from {
+      transform: rotate(360deg);
+      transform-origin: 40% 20%;
+    }
+  }
+  /*//////// drinking /////////*/
+  .drinking {
+    /* animation name,duration,count,direction,time-function */
+    opacity: 0;
+    animation: drinking 0.7s ease-in 1.5s forwards;
+  }
+  @keyframes drinking {
+    0% {
+      transform: translateX(65%) rotate(45deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(1%);
+      opacity: 1;
+    }
+  }
+  
